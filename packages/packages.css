@@ -1,0 +1,63 @@
+main {
+  padding-top: 32px;
+}
+
+.package-plan {
+  background: rgba(180, 218, 195, 0.842);
+  margin: 16px 0;
+  width: 80%;
+  border: 5px solid black;
+  border-left: none;
+}
+
+.package-plan:hover,
+.package-plan:active {
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  filter: brightness(1.2);
+}
+
+.package-plan .package-title {
+  color: rgb(0, 0, 0);
+}
+
+.package-plan .package-subtitle {
+  color: rgb(95, 84, 84);
+}
+
+.premium {
+  background: rgb(21, 66, 21);
+  color: white;
+}
+
+.premium .package-title {
+  color: #fff;
+}
+
+.premium .package-subtitle {
+  color: #fff;
+}
+
+.free {
+  float: right;
+  border-left: 5px solid black;
+  border-right: none;
+  text-align: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.package-plan a {
+  text-decoration: none;
+  display: block;
+  padding: 32px;
+}
+
+.package-description {
+  background: white;
+  color: #000;
+  font-size: 20px;
+  padding: 15px;
+  border: 1px solid black;
+}
