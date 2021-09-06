@@ -29,6 +29,10 @@ body {
   font-size: 22px;
 }
 
+.main-header__brand img {
+  height: 40px;
+}
+
 .main-nav {
   display: inline-block;
   text-align: right;
