@@ -1,131 +1,127 @@
 #product-overview {
-    background: url("./images/freedom.jpg") left 10% bottom 80%/cover no-repeat border-box;
-    /* background-image: url('freedom.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left 10% bottom 80%;
-    background-origin: border-box;
-    background-clip: border-box; */
-    width: 100%;
-    height: 528px;
-    padding: 10px;
-    color: #fff;
-    margin-top: 42px;
-    position: relative;
+  background: linear-gradient(to top, rgba(80, 68, 18, 0.3) 10%, transparent),
+    url("./images/freedom.jpg") left 10% bottom 80% / cover no-repeat border-box,
+    #ff1b68;
+  width: 100%;
+  height: 528px;
+  padding: 10px;
+  color: #fff;
+  margin-top: 42px;
+  position: relative;
 }
 
 #product-overview h1 {
-    position: absolute;
-    left: 2%;
-    bottom: 10%;
+  position: absolute;
+  left: 2%;
+  bottom: 10%;
 }
 
 .section-title {
-    color: #2ddf5c;
-    text-align: center;
+  color: #2ddf5c;
+  text-align: center;
 }
 
 .plan__list {
-    width: 90%;
-    text-align: center;
-    margin: auto;
+  width: 90%;
+  text-align: center;
+  margin: auto;
 }
 
 .plan {
-    background: rgb(148, 238, 148);
-    text-align: center;
-    padding: 16px;
-    /*  */
-    /* margin-left: 2.5%; */
-    /*  */
-    margin-top: 8px;
-    margin-bottom: 8px;
-    display: inline-block;
-    width: 30%;
-    vertical-align: middle;
+  background: rgb(148, 238, 148);
+  text-align: center;
+  padding: 16px;
+  /*  */
+  /* margin-left: 2.5%; */
+  /*  */
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
 }
 
 .plan--highlighted {
-    background: rgb(5, 114, 5);
-    color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  background: rgb(5, 114, 5);
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
-    background: white;
-    color: rgb(5, 114, 5);
-    padding: 7px 5px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+  background: white;
+  color: rgb(5, 114, 5);
+  padding: 7px 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .plan__title {
-    color: #0e4f1f;
+  color: #0e4f1f;
 }
 
 .plan__price {
-    color: rgb(128, 126, 126);
+  color: rgb(128, 126, 126);
 }
 
 .plan--highlighted .plan__title {
-    color: white;
+  color: white;
 }
 
 .plan--highlighted .plan__price {
-    color: #270f0f;
+  color: #270f0f;
 }
 
 .plan__features {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .plan__features li {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
 #key-features {
-    background: #ff1b68;
-    margin-top: 100px;
-    padding: 16px;
+  background: #ff1b68;
+  margin-top: 100px;
+  padding: 16px;
 }
 
 #key-features .section-title {
-    color: white;
-    margin: 32px;
+  color: white;
+  margin: 32px;
 }
 
 .key-features__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .key-feature {
-    display: inline-block;
-    width: 30%;
-    /* vertical-align: top; */
+  display: inline-block;
+  width: 30%;
+  /* vertical-align: top; */
 }
 
 .key-feature__image {
-    background: #ffcede;
-    width: 128px;
-    height: 128px;
-    border: 2px solid #424242;
-    border-radius: 50%;
-    margin: auto;
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: auto;
+  padding: 20px;
 }
 
 .key-feature__description {
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
 }
 
 /* h1 {
     font-family: sans-serif;
 } */
-
