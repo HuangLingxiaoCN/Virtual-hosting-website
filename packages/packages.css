@@ -1,5 +1,5 @@
 main {
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 .background {
@@ -13,7 +13,7 @@ main {
 
 .package-plan {
   background: rgba(180, 218, 195, 0.842);
-  margin: 16px 0;
+  margin: 1rem 0;
   width: 80%;
   border: 5px solid black;
   border-left: none;
@@ -30,11 +30,11 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 20px;
-  font-size: 12px;
+  margin: 1.3rem;
+  font-size: 0.8rem;
   color: whitesmoke;
   background: #ff5454;
-  padding: 10px;
+  padding: 0.6rem;
   z-index: 10;
 }
 
@@ -78,13 +78,13 @@ main {
 .package-plan a {
   text-decoration: none;
   display: block;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .package-description {
   background: white;
   color: #000;
-  font-size: 20px;
-  padding: 15px;
+  font-size: 1.2rem;
+  padding: 1rem;
   border: 1px solid black;
 }
