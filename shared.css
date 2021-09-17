@@ -1,9 +1,14 @@
+html,
+body {
+  overflow-x: hidden !important;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
 }
 
@@ -43,6 +48,12 @@ body {
   vertical-align: middle;
 }
 
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+}
+
 .toggle-button:focus {
   outline: none;
 }
@@ -70,10 +81,16 @@ body {
 }
 
 .main-nav {
-  display: inline-block;
+  display: none;
   text-align: right;
   width: calc(100% - 122px);
   vertical-align: middle;
+}
+
+@media (min-width: 40rem) {
+  .main-nav {
+    display: inline-block;
+  }
 }
 
 .main-nav__items {
@@ -132,8 +149,15 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 1rem;
+  display: block;
+  margin: 1rem 0;
+}
+
+@media (min-width: 40rem) {
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
 
 .main-footer__link a {

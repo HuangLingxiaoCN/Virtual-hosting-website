@@ -17,13 +17,13 @@
   font-size: 2rem;
 }
 
-@media (min-width: 630px) {
+@media (min-width: 40rem) {
   #product-overview {
-    height: 60vh;
+    height: 45vh;
   }
 
   #product-overview h1 {
-    font-size: 1.6rem;
+    font-size: 3rem;
   }
 }
 
@@ -32,30 +32,20 @@
   text-align: center;
 }
 
-.plan__list {
-  width: 90%;
-  text-align: center;
-  margin: auto;
-}
-
 .plan {
   background: rgb(148, 238, 148);
   text-align: center;
   padding: 1rem;
-  /*  */
-  /* margin-left: 2.5%; */
-  /*  */
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  display: inline-block;
-  width: 30%;
+  margin: 0.5rem 0;
+  /* display: inline-block; */
+  width: 100%;
   vertical-align: middle;
 }
+
 
 .plan--highlighted {
   background: rgb(5, 114, 5);
   color: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .plan__annotation {
@@ -92,6 +82,25 @@
   margin: 0.5rem 0;
 }
 
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 13rem;
+    max-width: 27rem;
+  }
+
+  .plan--highlighted {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
 #key-features {
   background: #ff1b68;
   margin-top: 100px;
@@ -111,9 +120,17 @@
 }
 
 .key-feature {
-  display: inline-block;
-  width: 30%;
-  /* vertical-align: top; */
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 40rem) {
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    max-width: 27rem; 
+    vertical-align: top;
+  }
 }
 
 .key-feature__image {
