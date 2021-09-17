@@ -88,3 +88,20 @@ main {
   padding: 1rem;
   border: 1px solid black;
 }
+
+@media (min-width: 40rem) {
+  main {
+    margin: 3rem auto;
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .package-plan {
+    border-left: 5px solid black;
+  }
+
+  .free {
+    border-right: 5px solid black;
+  }
+}

@@ -83,7 +83,7 @@ body {
 .main-nav {
   display: none;
   text-align: right;
-  width: calc(100% - 122px);
+  width: calc(100% - 44px);
   vertical-align: middle;
 }
 
