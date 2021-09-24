@@ -36,11 +36,9 @@ main {
   top: 0;
   left: 0;
   z-index: 1;
-}
-
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .toggle-button {
@@ -51,12 +49,6 @@ main {
   padding-top: 0;
   padding-bottom: 0;
   vertical-align: middle;
-}
-
-@media (min-width: 40rem) {
-  .toggle-button {
-    display: none;
-  }
 }
 
 .toggle-button:focus {
@@ -76,36 +68,30 @@ main {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.4rem;
-  height: 1.5rem;
-  vertical-align: middle;
 }
 
 .main-header__brand img {
   height: 2.5rem;
+  vertical-align: middle;
   /* height: 100%; */
 }
 
 .main-nav {
-  display: none;
+  /* display: none;
   text-align: right;
   width: calc(100% - 44px);
-  vertical-align: middle;
-}
-
-@media (min-width: 40rem) {
-  .main-nav {
-    display: inline-block;
-  }
+  vertical-align: middle; */
+  display: none;
 }
 
 .main-nav__items {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .main-nav__item {
-  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -150,19 +136,14 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-footer__link {
-  display: block;
-  margin: 1rem 0;
-}
-
-@media (min-width: 40rem) {
-  .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
-  }
+  margin: 0.5rem 0;
 }
 
 .main-footer__link a {
@@ -190,9 +171,12 @@ main {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
@@ -225,4 +209,26 @@ main {
 
 .open {
   display: block !important;
+}
+
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-footer__link {
+    margin: 0 1rem;
+  }
 }
