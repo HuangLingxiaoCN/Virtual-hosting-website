@@ -91,7 +91,6 @@
 
   .plan {
     width: 30%;
-    vertical-align: middle;
     min-width: 13rem;
     max-width: 27rem;
     display: flex;
