@@ -1,3 +1,7 @@
+:root {
+  --dark-green: #0e4f1f;
+}
+
 html,
 body {
   overflow-x: hidden !important;
@@ -77,7 +81,7 @@ main {
 }
 
 .main-header__brand {
-  color: #0e4f1f;
+  color: var(--dark-green, #0e4f1f);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.4rem;
@@ -107,7 +111,7 @@ main {
 .main-nav__item a,
 .mobile-nav__item a {
   text-decoration: none;
-  color: #0e4f1f;
+  color: var(--dark-green, #0e4f1f);
   font-weight: bold;
   padding: 0.2rem 0;
 }
