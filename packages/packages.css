@@ -49,6 +49,11 @@ main {
 .package-plan:hover,
 .package-plan:active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation-name: move-up;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
 .package-plan .package-title {
@@ -113,5 +118,14 @@ main {
 
   .free {
     border-right: 5px solid black;
+  }
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1rem);
   }
 }

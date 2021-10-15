@@ -4,6 +4,7 @@ let modalNoBtn = document.querySelector('.modal__action--negative');
 let toggleBtn = document.querySelector('.toggle-button');
 let moblieNav = document.querySelector('.mobile-nav');
 let selectPlanButtons = document.querySelectorAll('.plan-button');
+let ctaButton = document.querySelector('.main-nav__item--cta');
 
 // for (var i = 0; i < selectPlanButtons.length; i++) {
 //   selectPlanButtons[i].addEventListener('click', function() {
@@ -15,10 +16,13 @@ let selectPlanButtons = document.querySelectorAll('.plan-button');
 function closeModal() {
   // backdrop.style.display = 'none';
   // modal.style.display = 'none';
-  backdrop.classList.remove('open');
   if (modal) {
     modal.classList.remove('open');
   }
+  backdrop.classList.remove('open');
+  setTimeout(() => {
+    backdrop.style.display = 'none';
+  }, 200);
 }
 
 if (selectPlanButtons) {
@@ -27,13 +31,18 @@ if (selectPlanButtons) {
       // backdrop.style.display = 'block';
       // modal.style.display = 'block';
       modal.classList.add('open');
-      backdrop.classList.add('open');
+      backdrop.style.display = 'block';
+      setTimeout(() => {
+        backdrop.classList.add('open');
+      }, 10);
     })
   });
 }
 
 backdrop.addEventListener('click', () => {
-  moblieNav.classList.remove('open');
+  setTimeout(() => {
+    moblieNav.classList.remove('open');
+  }, 10);
   closeModal();
 });
 
@@ -45,5 +54,23 @@ toggleBtn.addEventListener('click', () => {
   // moblieNav.style.display = 'block';
   // backdrop.style.display = 'block';
   moblieNav.classList.add('open');
-  backdrop.classList.add('open');
+  backdrop.style.display = 'block';
+  setTimeout(() => {
+    backdrop.classList.add('open');
+  }, 10);
 })
+
+
+// Events related to CSS animation
+
+// ctaButton.addEventListener('animationstart', function(event) {
+//   console.log('Animation started', event);
+// })
+
+// ctaButton.addEventListener('animationend', function(event) {
+//   console.log('Animation ended', event);
+// })
+
+// ctaButton.addEventListener('animationiteration', function(event) {
+//   console.log('Animation iterated', event);
+// })
